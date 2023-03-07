@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "target": "es2015",
+    "lib": ["esnext", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "types": ["vite/client"],
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["server/*"]
+    }
+  },
+  "files": ["server.d.ts"],
+  "include": [
+    "vite.config.node.ts",
+    "vite.config.web.ts",
+    "vite.config.ts",
+    "chumi/**/*.ts",
+    "server/**/*.ts",
+    "plugins/**/*.ts"
+  ]
+}
