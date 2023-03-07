@@ -6,9 +6,6 @@ import { VitePluginNode } from 'vite-plugin-node';
 import { resolve } from 'path';
 import compressServerCode from './plugins/compress-server-code';
 import viteServerPort from './plugins/server-port';
-import fs from 'fs-extra';
-
-const chumiLib = resolve(__dirname, 'node_modules/chumi');
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,7 +15,6 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      chumi: fs.existsSync(chumiLib) ? chumiLib : resolve(__dirname, 'chumi'),
       '@': resolve(__dirname, 'server'),
       '.prisma/client/index': resolve(__dirname, 'node_modules', '.prisma/client/index.js'),
       '.prisma/client': resolve(__dirname, 'node_modules', '.prisma/client/index.js')

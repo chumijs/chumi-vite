@@ -1,27 +1,20 @@
 {
-  "name": "chumi",
-  "version": "0.0.10",
-  "repository": "git@github.com:Topthinking/chumi.git",
+  "name": "chumi-vite",
+  "version": "1.0.0",
+  "repository": "git@github.com:chumijs/chumi-vite.git",
   "author": "topthinking",
   "license": "MIT",
-  "main": "./lib/chumi/index.js",
   "scripts": {
     "dev": "prisma generate && vite dev",
     "build:web": "vite build -c vite.config.web.ts",
     "build:server": "prisma generate && vite build -c vite.config.node.ts",
-    "build:chumi": "tsc -p tsconfig.chumi.json",
     "build": "rm -rf dist && npm run build:web && npm run build:server",
     "start": "node dist",
     "lint": "eslint src server --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "format": "prettier --write ."
   },
   "dependencies": {
-    "koa": "^2.14.1",
-    "koa-body": "^5.0.0",
-    "koa-compose": "^4.1.0",
-    "koa-router": "^10.1.1"
-  },
-  "peerDependencies": {
+    "chumi": "^0.0.10",
     "koa": "^2.14.1",
     "koa-body": "^5.0.0",
     "koa-compose": "^4.1.0",
