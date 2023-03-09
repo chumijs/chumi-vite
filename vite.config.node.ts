@@ -11,7 +11,11 @@ import viteServerPort from './plugins/server-port';
 export default defineConfig({
   build: {
     outDir: 'dist',
-    emptyOutDir: false
+    emptyOutDir: false,
+    rollupOptions: {
+      // 支持swagger
+      external: ['swagger-ui-dist', 'fs', 'path']
+    }
   },
   resolve: {
     alias: {

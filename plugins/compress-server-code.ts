@@ -59,6 +59,11 @@ export default function compressServerCode() {
       fs.writeFileSync(path.join(originPrisma, 'index-browser.js'), '');
 
       fs.copySync(originPrisma, outputPrisma);
+
+      fs.copySync(
+        path.join(process.cwd(), 'node_modules', 'swagger-ui-dist'),
+        path.join(process.cwd(), config.build.outDir, 'node_modules', 'swagger-ui-dist')
+      );
     }
   } as Plugin;
 }
