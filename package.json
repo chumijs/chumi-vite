@@ -14,7 +14,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "chumi": "1.0.5",
+    "chumi": "1.0.6",
     "koa": "^2.14.1",
     "koa-body": "^5.0.0",
     "koa-compose": "^4.1.0",

@@ -1379,10 +1379,10 @@ chalk@^4.0.0, chalk@^4.1.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-chumi@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/chumi/-/chumi-1.0.5.tgz#075e173e89f3a3cb90ce83a96d9be0873601372f"
-  integrity sha512-FD5gNWVfT1RZpGWxN4d6teASnT4OP19Xc1Do4XijLFfWwqtURRgQs1YDUJdeoD+vANCCQOa40xa5KppXuEpkWw==
+chumi@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/chumi/-/chumi-1.0.6.tgz#bf46461c3dfd798f495a01b087b228cc58f1a426"
+  integrity sha512-LTkJndBrlHxyJ3HwtG7nvHBAipwgde+OAMxIKhR4xhEIWEZGByDHbtVYLnXblvT2q5r7y3+OSpP8t3WaH/iFMQ==
   dependencies:
     "@types/koa" "^2.13.5"
     koa "^2.14.1"
